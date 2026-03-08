@@ -1,53 +1,91 @@
 <!DOCTYPE html>
-<html lang="vi" class="no-js">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Chúc mừng 8/3</title>
-		<link rel="shortcut icon" href="./rose.png">
-		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
-		<link rel="stylesheet" type="text/css" href="./style.css">
-		<script>document.documentElement.className = "js";
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng 20/10</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 2px solid #ffcccc;
+            position: relative;
+            z-index: 10;
+        }
+        h1 {
+            color: #ff3366;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        .heart {
+            color: #ff3366;
+            font-size: 5em;
+            animation: beat .25s infinite alternate;
+            transform-origin: center;
+        }
+        @keyframes beat{
+            to { transform: scale(1.1); }
+        }
 
-var supportsCssVars = function supportsCssVars() {
-  var e,
-      t = document.createElement("style");
-  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
-};
+        /* Floating images around */
+        .floating-img {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            animation: swing 3s ease-in-out infinite;
+        }
 
-supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="demo-1 loading">
-		<main>
-			<!-- <div class="message">Please view this demo on a desktop to see the effect.</div> -->
-			<div class="frame">
-			</div>
-			<div class="content">
-				<div class="grid">
-					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover" ></div></div>
-					<div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(./img/img3.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-4"><div class="grid__item-img" style="background-image:url(./img/img4.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(./img/img2.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-5"><div class="grid__item-img" style="background-image:url(./img/img5.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-6"><div class="grid__item-img" style="background-image:url(./img/img6.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-7"><div class="grid__item-img" style="background-image:url(./img/img7.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(./img/img8.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div></div>
-				</div>
-                <h2 class="content__title no-select">
-					<span>Love</span>
-				</h2>
-				<h2 class="content__title no-select">
-					<span class="content__title-sub">Chúc em luôn tỏa sáng theo cách riêng của mình</span>
-					<br>
+        @keyframes swing {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+        .message {
+            margin-top: 20px;
+            font-style: italic;
+            color: #cc0066;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating images around -->
+    <img src="img/img1.jpg" alt="Flower 1" class="floating-img" style="top: 5%; left: 5%; animation-delay: 0s;">
+    <img src="img/img2.jpg" alt="Flower 2" class="floating-img" style="top: 5%; left: 30%; animation-delay: 0.5s;">
+    <img src="img/img3.jpg" alt="Flower 3" class="floating-img" style="top: 5%; right: 5%; animation-delay: 1s;">
+    <img src="img/img4.jpg" alt="Flower 4" class="floating-img" style="top: 5%; right: 30%; animation-delay: 1.5s;">
+    <img src="img/img5.jpg" alt="Flower 5" class="floating-img" style="top: 35%; left: 2%; animation-delay: 2s;">
+    <img src="img/img6.jpg" alt="Flower 6" class="floating-img" style="top: 35%; right: 2%; animation-delay: 0.3s;">
+    <img src="img/img7.jpg" alt="Flower 7" class="floating-img" style="bottom: 5%; left: 5%; animation-delay: 1.2s;">
+    <!-- <img src="img/img8.jpg" alt="Flower 8" class="floating-img" style="bottom: 5%; left: 35%; animation-delay: 0.8s;"> -->
+    <img src="img/img9.jpg" alt="Flower 9" class="floating-img" style="bottom: 5%; right: 35%; animation-delay: 1.8s;">
+    <img src="img/8.jpg" alt="Flower 10" class="floating-img" style="bottom: 5%; right: 5%; animation-delay: 2.2s;">
+    <img src="img/img10.jpg" alt="Flower 11" class="floating-img" style="top: 50%; right: 15%; animation-delay: 0.7s;">
 
-				</h2>
-			</div>
-		</main>
-        <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
-			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
-		</svg>
-		<script src="./script.js"></script>
-	</body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>20/10</h1>
+        <p>Chúc mừng Ngày Phụ nữ Việt Nam!</p>
+        <p class="message">Chúc em luôn xinh đẹp, hạnh phúc và thành công!</p>
+    </div>
+</body>
 </html>
